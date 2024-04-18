@@ -1,0 +1,48 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('send_css', path='style.css') }}">
+</head>
+<body>
+    <h1>Hii everyone</h1>
+    <script src="{{ url_for('send_js', path='scripts.js') }}"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cancer Detection using Image Processing and Deep Learning</title>
+  <link rel="stylesheet" href="{{ url_for('send_css', path='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Cancer Detection using Image Processing and Deep Learning</h1>
+  </header>
+  <div class="upload-container">
+    <div class="image-upload-section">
+      <div id="dataUpload">
+        <h2>Upload Image</h2>
+        <!-- <input type=""> -->
+        <div class="upload-btn-wrapper">
+          <button class="btn" id="chooseImageButton">Choose Image</button>
+          <input type="file" name="imageInput" id="imageInput" accept="image/*">
+        </div>
+        <div id="imagePreview">
+        </div>
+        <div>
+          <button class="btn" id="submitBtn">Submit</button>
+          <div id="result">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="{{ url_for('send_js', path='scripts.js') }}"></script>
+</body>
+</html>
